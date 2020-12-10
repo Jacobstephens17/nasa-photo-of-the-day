@@ -7,7 +7,8 @@ import React from "react";
 
     return (
       <div>
-        
+        <h1>Image Of The Day!</h1>
+        <img src='{images}'></img>
       </div>
     )
   };
