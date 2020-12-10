@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from 'axios';
-import Date from '../components/Date'
-import Explanation from '../components/Explanation'
-import Image from '../components/Image'
-import Title from '../components/Title'
+import Date from './Date'
+import Explanation from './Explanation'
+import Image from './Image'
+import Title from './Title'
 
 function App() {
 
