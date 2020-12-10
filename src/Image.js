@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from "react";
-import "./App.css";
-import axios from 'axios';
-import dataFetch from './App/nasaData'
+import React from "react";
 
-export default function Image(props) {
-    const [image, setImage] = useState([])
-    useEffect(() => {
-       
-        }
-    })
-}
-// return{
 
-// }
+  
+  export default function Image(props){
+    const { images } = props;
+
+    return (
+      <div>
+        
+      </div>
+    )
+  };
