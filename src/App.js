@@ -9,6 +9,7 @@ import Title from './Title'
 function App() {
 
   let [nasaData, setNasaData] = useState([]);
+
   // let [date, setDate] = useState([]);
   // let [explanation, setExplanation] = useState([]);
   // let [title, setTitle] = useState([]);
@@ -19,14 +20,13 @@ function App() {
       axios
         .get('https://api.nasa.gov/planetary/apod?api_key=w0V35ecxUKX0IkeHaoeMJKD6m8zO0lmgDmgkzWJc')
         .then((res) =>{
-          setNasaData(res)
+          setNasaData(res.data)
         })
         .catch((err) =>{
           console.log(err)
         })
       }
       nasaDataFetch()
-  
   },[]);
   
   console.log('nasaData', nasaData)
@@ -38,6 +38,7 @@ function App() {
         Read through the instructions in the README.md file to build your NASA
         app! Have fun <span role="img" aria-label='go!'>🚀</span>!
       </p>
+      {/* <App/> */}
     </div>
   );
 }
