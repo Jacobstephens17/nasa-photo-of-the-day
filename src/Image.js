@@ -8,7 +8,8 @@ import React from "react";
     return (
       <div>
         <h1>Image Of The Day!</h1>
-        <img src='{images}'></img>
+        {/* <img src='{ images }'></img> */}
+        <iframe src={ images } width="100%" height="300"></iframe>
       </div>
     )
   };
