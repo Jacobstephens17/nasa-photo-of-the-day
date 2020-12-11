@@ -1,0 +1,22 @@
+body{
+    background-color:blue;
+    padding-bottom:1rem;
+    padding-left:3rem;
+    padding-right:3rem;
+}
+
+body:hover{
+    background-color:black;
+}
+
+.img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    margin-bottom:2rem;
+}
+
+.img:hover{
+scale:1.1;
+}

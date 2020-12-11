@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
-
+import './index.css'
 import axios from 'axios';
 import styled from 'styled-components'
 import Image from './Image'
 
 const StyledApp = styled.div`
 background-color:black;
-width:100%;
+padding-bottom:2rem;
 
+&:hover{
+  background-color:red;
+}
 `
-const StyledImg = styled.div`
-width:50%;
-`
+
 function App() {
   const [images, setImage] = useState([]);
  
@@ -22,7 +23,7 @@ function App() {
         .then((res) =>{
           console.log(res.data.url)
           console.log(res)
-          setImage(res.data.url)
+          setImage(res.data)
         })
         .catch((err) =>{
           console.log(err)
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <StyledApp>
-        <Image images={ images } widht='50%'/>
+        <Image images={ images }/>
     </StyledApp>
   );
 }
